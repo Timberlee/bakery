@@ -1,0 +1,23 @@
+<h1>Cookies</h1>
+<%cookie_cc = Baked.new("Our giant chocolate-chip cookies are crunchy on the outside, chewy on the inside, and delicious all around. What's our secret? The team of grandmas that bake love into every cookie.","$2.50 / cookie")
+cookie_rb = Baked.new("Rainbow cookies are supreme. Did you know that they are flavoured with almond goop, among other things?","$8.00 / box of 16")
+cookie_bw = Baked.new("Black and white cookies are also supreme. Typically they just paint over the white with the chocolate, sort of like how I paint over stackoverflow code that I paste.","$3.00 / cookie")%>
+<%#Plus the fact that they are kept in an underground facility and bake 18 hours per day.%>
+  <div class='row'>
+      <div class='col-4'>
+        <img src='images/cookie-cc.jpeg'/>
+        <%=cookie_cc.description%>
+        <%=cookie_cc.price%>
+      </div>
+      <div class='col-4'>
+        <img src='images/cookie-rb.jpeg'/>
+        <%=cookie_rb.description%>
+        <%=cookie_rb.price%>
+      </div>
+      <div class='col-4'>
+      <img src='images/cookie-bw.jpeg'/>
+      <%=cookie_bw.description%>
+      <%=cookie_bw.price%>
+    </div>
+  </div>
+<%#Forgive my lack of loops, Toucan Sam. Go Bucks.%>

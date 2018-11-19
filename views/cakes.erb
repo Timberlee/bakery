@@ -1,0 +1,21 @@
+<h1>Cakes</h1>
+<%=cake_co = Baked.new("What is the source of the magic in our coconut cakes? Unicorn tears! We're not afraid to give away that part of the secret, because like most rare substances, the real key is in the processing.","$32.50")
+cake_bf = Baked.new("Tief im Schwarzwald gebacken, werden diese Schwarzwälder Kirschkuchen in Zusammenarbeit mit einem blinden Schuhmacher und Bäcker ohne Finger hergestellt. Sie wurden alle vom Großen Bösen Wolf abgebissen! Hinweis: Aufgrund eines Wildschweinbefalls kann es zu Verzögerungen kommen.","€68.32")
+cake_sk = Baked.new("This Sakotis cake is slow baked on a spit the traditional Lithuanian method. It eats more like a cookie and is not-too-sweet. More resilient than a Warsaw Pact citizen, it ships well.","$308.37")%>
+  <div class='row'>
+    <div class='col-4'>
+      <img src='images/cake-co.jpeg'>
+      <%=cake_co.description%>
+      <%=cake_co.price%>
+    </div>
+    <div class='col-4'>
+      <img src='images/cake-bf.jpeg'/>
+      <%=cake_bf.description%>
+      <%=cake_bf.price%>
+    </div>
+    <div class='col-4'>
+      <img src='images/cake-sk.jpeg'/>
+      <%=cake_sk.description%>
+      <%=cake_sk.price%>
+    </div>
+  </div>

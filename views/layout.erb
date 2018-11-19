@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <title>Poovey's Bakery</title>
+    <style>
+      @font-face {
+        font-family: "wordsoflove";
+        src: url('https://www.dafont.com/words-of-love.font');
+      }
+
+      h1 {
+        font-family: "wordsoflove" !important;
+      }
+    </style>
+  </head>
+    <nav>
+      <h1 id='front_and_center'>Pam Poovey's Bakery</h1>
+      <a href='/'>Home</a>
+      <a href='/cookies'>Cookies</a>
+      <a href='/muffins'>Muffins</a>
+      <a href='/cakes'>Cakes</a>
+    </nav>
+<body>
+    <%= yield %>
+</body>
+    <footer class="page-footer fixed-bottom font-small blue pt-4">
+      <a href='#'>Contact Us</a>
+      <a href='/events'>Events</a>
+      <a href='/#'>About Us</a>
+      <a href='https://www.openstreetmap.org/query?lat=44.8397&lon=-91.4506'>Store Hours and Directions</a>
+    </footer>
+</html>

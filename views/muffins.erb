@@ -1,0 +1,22 @@
+<h1>Muffins</h1>
+<%muffin_bb = Baked.new("Our humungous blueberry muffins are golden brown and structurally sound. That is to say, a nice crunch to the top, while still being moist yet stable in the base. Such structural integrity that I often let my kids play in them and eat their way out. Plus, we generously line the wrappers with lard to ensure that you won't lose half of the muffin base to peelage. Don't eat too many, or you may end up with a muffin top yourself.","$158.00 / muffin")
+muffin_cc = Baked.new("We have the best crumbcake muffins on earth. Want to know why? Every day the formula is being crafted and perfected by a blind nun at 14,000ft in the Andes, who has devoted herself to solitude.","$13.25 / muffin")
+# add a unit converter hover for ft / meters
+muffin_lp = Baked.new("Lemon poppyseed muffins provide a nice variety.","$1.75 / gross")%>
+    <div class='row'>
+      <div class='col-4'>
+        <img src= 'images/muffin-bb.jpeg'>
+        <%=muffin_bb.description%>
+        <%=muffin_bb.price%>
+      </div>
+      <div class='col-4'>
+        <img src='images/muffin-cc.jpeg'/>
+        <%=muffin_cc.description%>
+        <%=muffin_cc.price%>
+      </div>
+      <div class='col-4'>
+      <img src='images/muffin-lp.jpeg'/>
+      <%=muffin_lp.description%>
+      <%=muffin_lp.price%>
+      </div>
+    </div>

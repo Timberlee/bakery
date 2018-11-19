@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "wordsoflove.ttf";
+    src: url(/public/wordsoflove.ttf);
+}
+footer {
+  background-color: #cc66ff;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+body {
+  background-color: #ffff00;
+  color: #cc66ff;
+  /* padding: 0 1vw 0 1vw; */
+}
+body a {
+  color: #ffff00;
+  font-size: 18pt;
+}
+h1 {
+  align: center;
+  font-family: "wordsoflove";
+  font-size: 36pt;
+}
+#front_and_center {
+  font-family: 'wordsoflove';
+  font-size: 48pt;
+  text-align: center;
+  color: #ffff00;
+  position: absolute;
+  /* top: -20px; */
+
+}
+nav {
+  background-color: #cc66ff;
+  color: #ffff00;
+  display: flex;
+  justify-content: space-around;
+  height: 17.5vh;
+
+}
+nav a {
+  align-self: flex-end;
+}
+.row {
+  justify-content: space-evenly;
+  padding: 0 1vw 15vh 1vw;
+}
+.buffer {
+  height: 2.5vw;
+}
+/*at this point I'm leaving these .columns alone rather than switch to .col and refactor*/
+.column img {
+  width: 20vw;
+  height: 20vw;
+  margin: 2.5vw;
+}
+.column img:hover{
+  opacity: .8;
+}
+.col-4 img{
+  width: 100%;
+}
+.logos{
+  width: 100%;
+  /* height: auto; */
+}
+.contain {
+  white-space: wrap;
+  overflow: ellipsis;
+}

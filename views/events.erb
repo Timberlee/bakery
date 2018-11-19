@@ -1,0 +1,11 @@
+<div class='row'>
+  <%@events[0..5].each do |event|%>
+    <div class='col-md-4'>
+      <strong><%=event['name']['text']%></strong>
+      <%=event['start']['local']%><br><%=event['description']['text']%>
+      <%$logo = event['logo']['original']['url']%>
+      <img class='logos' src='<%=$logo%>' alt='Event Logo'>
+    </div>
+  <%end%>
+</div>
+<%#.slice(0..250) - I really wanted to have the option of clicking on the ellipsis and expanding to the full description, but am out of time for the time being. As the results as of 2018.8.15 are not too lengthy I'm leaving them as is.%>
